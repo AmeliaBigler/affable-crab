@@ -1,14 +1,16 @@
 const { Schema, model } = require('mongoose');
 
-const testSchema = new Schema({
+const cropSchema = new Schema({
   name: {
     type: String,
     required: true,
     unique: true,
     trim: true,
   },
+// time planted
+// location
 });
 
-const Test = model('Test', testSchema);
+const Crop = model('Crop', cropSchema);
 
-module.exports = Test;
+module.exports = Crop;
